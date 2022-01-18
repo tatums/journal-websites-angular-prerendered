@@ -1,0 +1,7 @@
+<ul class="heroes">
+  <li *ngFor="let article of (articles$ | async)">
+    <a routerLink="/articles/{{article.id}}/">
+      <span class="badge">{{article.id}}</span> {{article.title}}
+    </a>
+  </li>
+</ul>
