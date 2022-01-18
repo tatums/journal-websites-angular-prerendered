@@ -1,5 +1,5 @@
 {
-  "name": "angular-blog-ssr-prerender",
+  "name": "journal-websites-ssr-prerender",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,7 +10,7 @@
     "dev:ssr": "ng run angular-blog-ssr-prerender:serve-ssr",
     "serve:ssr": "node dist/angular-blog-ssr-prerender/server/main.js",
     "build:ssr": "ng build && ng run angular-blog-ssr-prerender:server",
-    "prerender": "ng run angular-blog-ssr-prerender:prerender",
+    "prerender": "ng run angular-blog-ssr-prerender:prerender --routes-file routes.txt",
     "preview": "npx http-server dist/angular-blog-ssr-prerender/browser"
   },
   "private": true,
